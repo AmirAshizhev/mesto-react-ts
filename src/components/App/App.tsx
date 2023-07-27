@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import Card from '../Сard/Card';
+import Card from '../card/card';
 
 function App(): JSX.Element {
   return (
