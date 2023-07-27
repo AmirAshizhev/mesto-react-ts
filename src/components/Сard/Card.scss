@@ -1,0 +1,19 @@
+.card{
+  width: 282px;
+  height: 361px;
+  position: relative;
+  list-style: none;
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 282px 79px;
+
+  &__delete{
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    // background-image: url(../../images/icons/trash.svg);
+  }
+}

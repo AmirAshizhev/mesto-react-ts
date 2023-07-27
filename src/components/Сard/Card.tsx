@@ -1,4 +1,5 @@
 import React from 'react';
+import './Card.scss';
 
 function Card(): React.JSX.Element {
   return (
@@ -6,7 +7,7 @@ function Card(): React.JSX.Element {
       <img src="" alt="место" className="card__img" />
       <button className="card__delete"></button>
       <div className="card__info">
-        <p className="card__info"></p>
+        <p className="card__info">Название места</p>
         <div className="card__like-countainer">
           <div className="card__like"></div>
           <span className="card__like-count"></span>
