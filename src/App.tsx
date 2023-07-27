@@ -1,15 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  //  asd
+function App(): JSX.Element {
   console.log('test');
+
+  // const [state, setState] = useState(null);
 
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
