@@ -23,7 +23,6 @@
   "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
   "rules": {
     "@typescript-eslint/dot-notation": "error",
-    "no-console" :"warn"
-
+    "no-console": "warn"
   }
 }
