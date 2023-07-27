@@ -3,6 +3,7 @@ import './App.css';
 
 function App(): JSX.Element {
   console.log('test');
+  console.log('test2');
 
   // const [state, setState] = useState(null);
 
