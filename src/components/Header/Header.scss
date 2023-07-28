@@ -14,12 +14,11 @@
     display: flex;
     justify-content: space-between;
 
-        @media (max-width: 880px) {
+    @media (max-width: 880px) {
       & {
         padding: 0 30px;
       }
     }
-
   }
 
   &__logo {
@@ -35,7 +34,7 @@
         height: 24.396px;
       }
     }
-  } 
+  }
 
   &__box {
     display: flex;
@@ -46,12 +45,11 @@
         display: none;
       }
     }
-    
-    &_active{
+
+    &_active {
       display: none;
       @media (max-width: 480px) {
         & {
-
           display: flex;
           flex-direction: column;
           gap: 18px;
@@ -61,7 +59,6 @@
       }
     }
   }
-  
 
   &__email {
     color: #fff;
@@ -72,11 +69,10 @@
     font-weight: 500;
     line-height: 22px;
     margin: 0;
-
   }
 
   &__logout {
-    color: #A9A9A9;
+    color: #a9a9a9;
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -85,12 +81,12 @@
     margin: 0;
     text-decoration: none;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
   }
 
-  &__burger{
+  &__burger {
     width: 24px;
     height: 21px;
     background-image: url(../../images/icons/burger.svg);
@@ -104,17 +100,16 @@
       & {
         display: block;
       }
-    } 
+    }
 
-    &:hover{
+    &:hover {
       cursor: pointer;
       opacity: 0.6;
     }
 
-    &_active{
+    &_active {
       background-image: url(../../images/icons/burger__active.svg);
     }
-
   }
 
   &__line {
@@ -131,7 +126,7 @@
       }
     }
 
-    &_burger{
+    &_burger {
       margin: 22px 0 0 0;
     }
   }
