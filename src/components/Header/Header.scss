@@ -4,33 +4,120 @@
   flex-direction: column;
   gap: 41px;
 
-    @media(max-width: 480px){
+  @media (max-width: 480px) {
+    & {
+      gap: 31px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+        @media (max-width: 880px) {
       & {
-        gap: 31px;
+        padding: 0 30px;
       }
     }
 
-  &__content{
-
   }
 
-  &__logo{
+  &__logo {
+    width: 142px;
+    height: 33px;
+    background-image: url(../../images/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 
-  }
+    @media (max-width: 480px) {
+      & {
+        width: 103.736px;
+        height: 24.396px;
+      }
+    }
+  } 
 
-  &__box{
+  &__box {
+    display: flex;
+    gap: 24px;
+    margin-top: 6px;
+    @media (max-width: 480px) {
+      & {
+        display: none;
+      }
+    }
     
+    &_active{
+      display: none;
+      @media (max-width: 480px) {
+        & {
+
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+          align-items: center;
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+  
+
+  &__email {
+    color: #fff;
+    // text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    margin: 0;
+
   }
 
-  &__email{
-    
+  &__logout {
+    color: #A9A9A9;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0;
+    text-decoration: none;
+
+    &:hover{
+      cursor: pointer;
+    }
   }
 
-  &__logout{
-    
+  &__burger{
+    width: 24px;
+    height: 21px;
+    background-image: url(../../images/icons/burger.svg);
+    display: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+
+    @media (max-width: 480px) {
+      & {
+        display: block;
+      }
+    } 
+
+    &:hover{
+      cursor: pointer;
+      opacity: 0.6;
+    }
+
+    &_active{
+      background-image: url(../../images/icons/burger__active.svg);
+    }
+
   }
 
-  &__line{
+  &__line {
     width: 100%;
     opacity: 0.7;
     background: #545454;
@@ -38,11 +125,14 @@
     border: none;
     margin: 0 0 36px 0;
 
-    @media(max-width: 480px){
-      &{
-            margin: 0 0 42px 0;
+    @media (max-width: 480px) {
+      & {
+        margin: 0 0 42px 0;
       }
     }
-  }
 
+    &_burger{
+      margin: 22px 0 0 0;
+    }
+  }
 }
