@@ -11,10 +11,10 @@ function Card(): React.JSX.Element {
       />
       <button className="card__delete"></button>
       <div className="card__info">
-        <p className="card__info">Название места</p>
+        <p className="card__name">Название местаНазвание места</p>
         <div className="card__like-countainer">
-          <div className="card__like"></div>
-          <span className="card__like-count"></span>
+          <button className="card__like" type="button"></button>
+          <span className="card__like-count">6</span>
         </div>
       </div>
     </li>

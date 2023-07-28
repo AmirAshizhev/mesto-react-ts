@@ -23,10 +23,67 @@
     height: 18px;
     width: 19.3px;
     background-image: url(../../images/icons/trash.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 
     &:hover {
       opacity: 0.6;
       cursor: pointer;
     }
+  }
+
+  &__info{
+    display: flex;
+    padding: 22px 20px 19px 21px;
+    justify-content: space-between;
+  }
+
+  &__name{
+    margin: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 210px;
+  }
+
+  &__like-countainer{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    height: 38px;
+  }
+
+  &__like{
+    background-color: transparent;
+    border: none;
+    height: 19px;
+    width: 22px;
+    background-image: url(../../images/icons/like.svg);
+
+    &:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+
+    &_active {
+      background-image: url(../../images/icons/like__active.svg);
+    }
+  }
+
+  &__like-count{
+    margin: 0;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
