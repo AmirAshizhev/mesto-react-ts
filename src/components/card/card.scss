@@ -32,13 +32,13 @@
     }
   }
 
-  &__info{
+  &__info {
     display: flex;
     padding: 22px 20px 19px 21px;
     justify-content: space-between;
   }
 
-  &__name{
+  &__name {
     margin: 0;
     color: #000;
     font-family: Inter;
@@ -52,14 +52,14 @@
     max-width: 210px;
   }
 
-  &__like-countainer{
+  &__like-countainer {
     display: flex;
     flex-direction: column;
     gap: 3px;
     height: 38px;
   }
 
-  &__like{
+  &__like {
     background-color: transparent;
     border: none;
     height: 19px;
@@ -76,7 +76,7 @@
     }
   }
 
-  &__like-count{
+  &__like-count {
     margin: 0;
     color: #000;
     text-align: center;

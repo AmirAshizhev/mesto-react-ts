@@ -1,0 +1,48 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+
+    @media(max-width: 480px){
+      & {
+        gap: 31px;
+      }
+    }
+
+  &__content{
+
+  }
+
+  &__logo{
+
+  }
+
+  &__box{
+    
+  }
+
+  &__email{
+    
+  }
+
+  &__logout{
+    
+  }
+
+  &__line{
+    width: 100%;
+    opacity: 0.7;
+    background: #545454;
+    height: 2px;
+    border: none;
+    margin: 0 0 36px 0;
+
+    @media(max-width: 480px){
+      &{
+            margin: 0 0 42px 0;
+      }
+    }
+  }
+
+}
