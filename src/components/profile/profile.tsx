@@ -9,8 +9,12 @@ function Profile(): React.JSX.Element {
         <img src={defaultAvatar} alt="" className="profile__avatar" />
       </div>
       <div className="profile__info">
-        <p className="profile__name"></p>
-        <p className="profile__job"></p>
+        <div className="profile__box">
+          <p className="profile__name">Жак-Ив Кусто</p>
+          <button className="profile__edit" type="button"></button>
+        </div>
+
+        <p className="profile__job">Исследователь океана</p>
       </div>
     </div>
   );
