@@ -3,6 +3,9 @@ import './profile.scss';
 import defaultAvatar from '../../images/defaultAvatar.jpg';
 
 function Profile(): React.JSX.Element {
+  // const [name, setName] = useState<string>('')
+  // const [job, setJob] = useState<string>('')
+
   return (
     <div className="profile">
       <div className="profile__avatar-container">

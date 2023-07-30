@@ -1,0 +1,32 @@
+.footer{
+
+  align-self: flex-start;
+  margin-top: 67px;
+  margin-bottom: 60px;
+  @media (max-width: 880px) {
+    padding: 0 19px;
+  }
+
+  @media (max-width: 600px) {
+    width: 282px;
+    align-self: center;
+    padding: 0;
+    margin-top: 48px;
+    margin-bottom: 36px;
+  }
+
+
+  &__text{
+    color: #545454;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
+  }
+}
