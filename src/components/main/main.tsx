@@ -7,7 +7,14 @@ function Main(): React.JSX.Element {
   return (
     <main className="main">
       <Panel />
-      <Card />
+      <ul className="main__list">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </ul>
     </main>
   );
 }
