@@ -7,6 +7,10 @@
   min-height: calc(100vh - 148px - 112px - 45px);
 
   @media (max-width: 600px) {
+    min-height: calc(100vh - 148px - 28px - 112px);
+  }
+
+  @media (max-width: 480px) {
     min-height: calc(100vh - 101px - 28px - 100px);
   }
 }

@@ -69,7 +69,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": "npm run lint",
-    "*.{ts,tsx,css,md,html,json}": "npm run format"
+    "*.{ts,tsx,css,scss,md,html,json}": "npm run format"
   },
   "author": "",
   "license": "ISC"
