@@ -1,20 +1,21 @@
 import React from 'react';
 import './card.scss';
+import type { CardType } from '../../types/types';
 
-function Card(): React.JSX.Element {
+function Card({likes, name, link, owner, _id}:CardType): React.JSX.Element {
   return (
-    <li className="card">
+    <li className="card" key={_id}>
       <img
-        src="https://www.kp.ru/russia/wp-content/uploads/2019/11/elbrus-1330-530x322.jpg"
-        alt="место"
+        src={link}
+        alt={name}
         className="card__img"
       />
       <button className="card__delete"></button>
       <div className="card__info">
-        <p className="card__name">Название местаНазвание места</p>
-        <div className="card__like-countainer">
+        <p className="card__name">{name}</p>
+        <div className="card__like-container">
           <button className="card__like" type="button"></button>
-          <span className="card__like-count">6</span>
+          <span className="card__like-count">{likes.length}</span>
         </div>
       </div>
     </li>

@@ -4,10 +4,10 @@ import Header from '../header/header';
 import Main from '../main/main';
 import Footer from '../footer/footer';
 import api from '../../utils/api';
-import type { Card } from '../../types/types';
+import type { CardType } from '../../types/types';
 
 function App(): JSX.Element {
-  const [cards, setCards] = useState<Card[]>([])
+  const [cards, setCards] = useState<CardType[]>([])
 
   useEffect(()=>{
     Promise.all([api.getInitialCards()])
@@ -27,7 +27,9 @@ function App(): JSX.Element {
     <div className="App">
       <div className="page">
         <Header />
-        <Main />
+        <Main 
+          cards={cards}
+        />
         <Footer />
       </div>
     </div>

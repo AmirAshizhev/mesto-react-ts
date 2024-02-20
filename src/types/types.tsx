@@ -6,7 +6,7 @@ export type User = {
   cohort: string
 }
 
-export type Card = {
+export type CardType = {
   likes: User[],
   _id: string,
   name: string,

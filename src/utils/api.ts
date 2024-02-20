@@ -1,4 +1,4 @@
-import type{ Card } from "../types/types"
+import type{ CardType } from "../types/types"
 
 type Options = {
   baseUrl: string
@@ -19,7 +19,7 @@ class Api {
     this.headers = options.headers
   }
 
-  public async getInitialCards(): Promise<Card> {
+  public async getInitialCards(): Promise<CardType> {
     const res = await fetch(`${this.url}/cards`, {
       headers: this.headers
     })
