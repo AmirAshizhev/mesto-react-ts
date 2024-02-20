@@ -1,9 +1,11 @@
+import type{ Card } from "../types/types"
+
 type Options = {
   baseUrl: string
   headers: HeadersInit
 }
 
-type Card = {
+type NewCard = {
   name: string
   link: string
 }
@@ -17,14 +19,14 @@ class Api {
     this.headers = options.headers
   }
 
-  public async getInitialCards(): Promise<any> {
+  public async getInitialCards(): Promise<Card> {
     const res = await fetch(`${this.url}/cards`, {
       headers: this.headers
     })
     return await this.checkResponse(res)
   }
 
-  public async postNewCard(card: Card): Promise<any> {
+  public async postNewCard(card: NewCard): Promise<any> {
     const res = await fetch(`${this.url}/cards`, {
       method: 'POST',
       headers: this.headers,
